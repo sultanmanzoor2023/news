@@ -362,7 +362,7 @@ def predict_future(model, last_seq, steps_pred, model_type, scaler):
 
         predicted = np.array(predicted).reshape(-1, 1)
         predicted_prices = scaler.inverse_transform(predicted)
-        return predicted_prices.flatten()
+        return predicted_prices.flatten().tolist()  # Convert to list explicitly
     except Exception as e:
         handle_error(f"predicting future prices with {model_type}", e, show_traceback=True)
         return None

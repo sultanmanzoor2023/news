@@ -1,9 +1,8 @@
-streamlit>=1.30
-numpy>=1.23
+streamlit>=1.45.1
+numpy>=1.24.3
 pandas>=1.5
 yfinance>=0.2.36
 plotly>=5.18
-tensorflow>=2.11
+tensorflow>=2.14.0
 scikit-learn>=1.2
 joblib>=1.2
-
